@@ -1,0 +1,16 @@
+Source: scopewatch
+Section: utils
+Priority: optional
+Maintainer: scopewatch contributors <maintainers@scopewatch.invalid>
+Build-Depends: debhelper-compat (= 13), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.6.2
+Homepage: https://github.com/zipperswag111/scopewatch
+Rules-Requires-Root: no
+
+Package: scopewatch
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: authorized external asset-drift auditor
+ Evidence-first monitoring for explicitly authorized domains. It labels
+ passive observations, historic baseline data, optional wordlist candidates,
+ and DNS-verified hosts separately, with source provenance.
